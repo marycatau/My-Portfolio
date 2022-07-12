@@ -1,0 +1,145 @@
+* {}
+
+
+body {
+  margin:0%;
+
+}
+
+main {
+  padding: 10px;
+  background-image: linear-gradient(cyan, gray,rgba(54, 56, 15, 0.589));
+}
+
+
+/*Setting in Header tag*/
+header {
+    display: block;
+    background-color: rgb(11, 20, 123);
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+  color: d
+}
+
+.MyName {
+  display: Inline;
+}
+
+/*Setting of Nav link*/
+nav {
+    display: inline-block;
+    float:right;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  /*Setting of different Section*/
+.Contentbox {
+    display:block;
+    font-size: 16pt;
+    color:black;
+}
+
+/*Setting in AboutMe section*/
+#AboutMe {
+  padding-top: 5px;
+}
+
+#AboutMe figure {
+  display: inline-block;
+  width: 30%;
+  margin: 0;
+}
+
+#AboutMe figure img{
+  width: 100%;
+}
+
+figcaption {
+  font-size:large;
+}
+
+
+#selfdescription {
+  display: inline-block;
+  width: 68%;
+  vertical-align: top;
+}
+
+#selfdescription p{
+  line-height: 1.5;
+}
+
+/*Setting in Work Section*/
+#Work {
+  justify-content: center;
+  
+}
+
+.WorkProject {
+  display:inline-block;
+  width:29%;
+}
+
+.WorkProject h3 {
+  display:inline-block;
+}
+
+.WorkProject img {
+  width:-webkit-fill-available;
+}
+
+.WorkProject:hover {
+ width:40%;
+ cursor: pointer;
+}
+
+
+
+
+/*Setting in Contact Section*/
+#Contact {
+  padding: 50px 0px 50px 0px;
+}
+
+#Contact h2 {
+  display:inline;
+  margin:0px;
+}
+
+#Contactlink {
+  display: inline-block;
+  float:right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding: 10px;
+}
+
+#Contactlink a {
+  padding: 14px 20px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width:530px){
+  header {
+    padding-bottom: 50px;
+  }
+
+  #selfdescription p{
+    line-height: 1;
+  }
+}
