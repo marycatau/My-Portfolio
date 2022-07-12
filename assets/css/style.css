@@ -1,38 +1,44 @@
-* {}
 
+ /* declare variables */
+:root {
+  --largepad: 50px;
+  --smallpad: 10px; 
+ 
+}
 
 body {
   margin:0%;
-
+  min-width: 375px;
 }
 
 main {
-  padding: 10px;
+  padding: var(--smallpad);
   background-image: linear-gradient(cyan, gray,rgba(54, 56, 15, 0.589));
 }
 
 
 /*Setting in Header tag*/
 header {
-    display: block;
+    display: flex;
+    flex-direction: row;
     background-color: rgb(11, 20, 123);
     color: white;
-    padding: 10px;
+    padding: var(--smallpad);
+    border-bottom: 5px solid black;
+    justify-content: space-between;
 }
 
-h2 {
-  color: d
-}
 
 .MyName {
   display: Inline;
+  margin-bottom: 0px;
 }
 
 /*Setting of Nav link*/
 nav {
     display: inline-block;
-    float:right;
-    margin-top: 15px;
+    margin-top: 20px;
+    padding: inherit;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
   }
@@ -40,8 +46,8 @@ nav {
 nav a {
     color: white;
     padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
+    text-decoration: underline;
+
   }
 
   /*Setting of different Section*/
@@ -82,11 +88,6 @@ figcaption {
 }
 
 /*Setting in Work Section*/
-#Work {
-  justify-content: center;
-  
-}
-
 .WorkProject {
   display:inline-block;
   width:29%;
@@ -106,11 +107,12 @@ figcaption {
 }
 
 
-
-
 /*Setting in Contact Section*/
 #Contact {
-  padding: 50px 0px 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--largepad) 0px var(--largepad) 0px;
+  justify-content:space-between;
 }
 
 #Contact h2 {
@@ -120,25 +122,31 @@ figcaption {
 
 #Contactlink {
   display: inline-block;
-  float:right;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
-  padding: 10px;
+  padding: var(--smallpad);
 }
 
 #Contactlink a {
   padding: 14px 20px;
   text-decoration: underline;
-  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  font-size: larger;
 }
 
 
-
-@media screen and (max-width:530px){
+@media screen and (max-width:555px){
   header {
-    padding-bottom: 50px;
+    flex-direction: column;
   }
-
+  nav {
+    padding:0px;
+  }
   #selfdescription p{
     line-height: 1;
   }
