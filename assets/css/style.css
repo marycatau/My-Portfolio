@@ -151,3 +151,12 @@ footer {
     line-height: 1;
   }
 }
+
+
+@media screen and (max-width:555px){
+  .WorkProject:hover {
+    width:35%;
+    cursor: pointer;
+   }
+
+}
