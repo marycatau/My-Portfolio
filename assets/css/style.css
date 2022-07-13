@@ -7,6 +7,10 @@
  
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin:0%;
   min-width: 375px;
@@ -135,6 +139,8 @@ figcaption {
   text-decoration: underline;
 }
 
+/*setting of footer section*/
+
 footer {
   display: flex;
   justify-content: center;
@@ -143,7 +149,7 @@ footer {
   background-image: linear-gradient(var(--bkgbrown),rgba(34, 35, 11, 0.589));
 }
 
-
+/*Media Queries Setting*/
 @media screen and (max-width:555px){
   header {
     flex-direction: column;
@@ -154,13 +160,9 @@ footer {
   #selfdescription p{
     line-height: 1;
   }
-}
 
-
-@media screen and (max-width:555px){
   .WorkProject:hover {
     width:35%;
     cursor: pointer;
    }
-
 }
