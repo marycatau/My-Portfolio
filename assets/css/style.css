@@ -3,6 +3,7 @@
 :root {
   --largepad: 50px;
   --smallpad: 10px; 
+  --bkgbrown:rgba(54, 56, 15, 0.589);
  
 }
 
@@ -13,7 +14,7 @@ body {
 
 main {
   padding: var(--smallpad);
-  background-image: linear-gradient(cyan, gray,rgba(54, 56, 15, 0.589));
+  background-image: linear-gradient(cyan, gray,var(--bkgbrown));
 }
 
 
@@ -99,6 +100,8 @@ figcaption {
 
 .WorkProject img {
   width:-webkit-fill-available;
+  width:-moz-available;         
+  width:fill-available;
 }
 
 .WorkProject:hover {
@@ -137,6 +140,7 @@ footer {
   justify-content: center;
   padding: 2%;
   font-size: larger;
+  background-image: linear-gradient(var(--bkgbrown),rgba(34, 35, 11, 0.589));
 }
 
 
